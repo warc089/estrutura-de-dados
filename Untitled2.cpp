@@ -1,22 +1,20 @@
 #include <iostream>
+#include <list>
 using namespace std;
 
 int main(){
-	int a[5], b[5], c[5];
 	
-	cout << "vetor a" << endl;
-	for (int i = 0; i < 5; ++i){
-		cout << "informe um valor" << endl;
-		cin >> a[i];
-	}
-	cout << "###############" << endl;
+	list<float> numList;
+	numList.push_front(10.1);
+	numList.push_front(20.2);
+	numList.push_front(30.3);
 	
-		cout << "vetor b" << endl;
-	for (int i = 0; i < 5; ++i){
-		cout << "informe um valor" << endl;
-		cin >> b[i];
+	for (auto j: numList){
+		
+		cout << j << " ";
+		
 	}
-	cout << "###############" << endl;
+	
+	return 0;
 	
 }
-

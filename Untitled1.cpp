@@ -1,18 +1,20 @@
 #include <iostream>
+#include <list>
 using namespace std;
 
 int main(){
-	int a[5];
 	
-	for (int i = 0; i < 5; ++i){
-		cout << "informe um valor: ";
-		cin >> a[i];
+	list<float> numList;
+	numList.push_back(10.1);
+	numList.push_back(20.2);
+	numList.push_back(30.3);
+	
+	for(auto element: numList){
+		
+		cout << element << " ";
 	}
 	
-	cout << "Valores informados: ";
-	for (int i = 0; i < 5; ++i){
-		cout << a[i] << " ";
-	}
+	cout << endl;
 	
 	return 0;
 }
